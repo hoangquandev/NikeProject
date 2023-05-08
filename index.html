@@ -1,44 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3224018509.js" crossorigin="anonymous"></script>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3224018509.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/assets/js/main.js"></script>
+
     <title>Nike clone</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-     <div class="wrapper">
+      <div class="wrapper">
         <!-- logo -->
         <a href="">
-            <img class="logo" src="https://shoe-store-five.vercel.app/logo.svg" alt="">
+          <img
+            class="logo"
+            src="https://shoe-store-five.vercel.app/logo.svg"
+            alt=""
+          />
         </a>
         <!-- menu -->
         <ul class="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Category</a></li>
-            <li><a href="">Contact</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li class="Cate">
+            <a href="">
+              Category
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </a>
+            <ul class="subCate">
+              <li><a href="">Jordans</a></li>
+              <li><a href="">Football Shoes</a></li>
+              <li><a href="">Sneakers</a></li>
+              <li><a href="">Running Shoes</a></li>
+            </ul>
+          </li>
+
+          <li><a href="">Contact</a></li>
         </ul>
         <!-- menu mobile -->
         <ul class="menuMobile">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Category</a></li>
-            <li><a href="">Contact</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li>
+            <a href="">Category</a>
+            <ul>
+              <li><a href="">Jordans</a></li>
+              <li>Football Shoes</li>
+              <li>Sneakers</li>
+              <li>Running shoes</li>
+            </ul>
+          </li>
+          <li><a href="">Contact</a></li>
         </ul>
         <ul>
-            
-            <i class="fa badge fa-lg cursor" value=8>&#xf07a;</i>  
-            <i class="fa-solid fa-user cursor"></i>
+          <i class="fa badge fa-lg cursor" value="8">&#xf07a;</i>
+          <i class="fa-solid fa-user cursor"></i>
         </ul>
-     </div>
-        <!-- wishlist, cart -->
+      </div>
+      <!-- wishlist, cart -->
     </header>
-</body>
+    <!-- slider -->
+    <div class="slider">
+      <div class="shopping">SHOP NOW</div>
+      <div class="image" id="slideTrans">
+        <div id="img1">
+            <img src="./assets/image/slide-1.png" alt="" />
+            <div class="shopping">SHOP NOW</div>
+        </div>
+        <div>
+            <img src="./assets/image/slide-2.png" alt="" />
+            <div class="shopping">SHOP NOW</div>
+        </div>
+        <div>
+            <img src="./assets/image/slide-3.png" alt="" />
+            <div class="shopping">SHOP NOW</div>
+        </div>
+
+        
+      </div>
+      <div class="but">
+        <button class="press cursor" onclick="prev()" id="prev">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="press cursor" onclick="next()" id="next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="slogan">
+      <p class="slogan1">Cushioning for Your Miles</p>
+      <p class="slogan2">
+        A lightweight Nike ZoomX midsole is combined with increased stack
+        heights to help provide cushioning during extended stretches of running.
+      </p>
+    </div>
+    <!-- slider -->
+
+    <!-- product -->
+    <div class="container">
+      <div class="productWrap">
+        <div class="product">
+          <img src="./assets/image/product/sp1.webp" alt="" />
+        </div>
+  
+        <div class="product">
+          <img src="./assets/image/product/sp1.webp" alt="" />
+        </div>
+        <div class="product">
+          <img src="./assets/image/product/sp1.webp" alt="" />
+        </div>
+        <div class="product">
+          <img src="./assets/image/product/sp1.webp" alt="" />
+        </div>
+      </div>
+    </div>
+   
+    <!-- product -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footerWrapper">
+        <div class="footerLeft">
+          <div class="footer1">
+            <div class="cursor">FIND A STORE </div>
+            <div class="cursor">BECOME A PARTNER</div>
+            <div class="cursor">SIGN UP FOR EMAIL</div>
+            <div class="cursor">SEND US FEEDBACK</div>
+            <div class="cursor">STUDENT DISCOUNT</div>
+            <div class="rights urban">© 2023 Nike, Inc. All Rights Reserved</div>
+          </div>
     
+          <div class="footer2 ">
+            <div class="oswald">GET HELP</div>
+        
+            <div class="urban1">Order Status</div>
+            <div class="urban1">Delivery</div>
+            <div class="urban1">Returns</div>
+            <div class="urban1">Payment Options</div>
+            <div class="urban1">Contact Us</div>
+          </div>
+    
+          <div class="footer2">
+            <div class="oswald">ABOUT NIKE</div>
+            <div class="urban1">News</div>
+            <div class="urban1">Careers</div>
+            <div class="urban1">Sustainability</div>
+          </div>
+        </div>
+        
+  
+        <div class="footerRight">
+          <div class="footerRightUp">
+            <i class="fa-brands fa-facebook-f icon"></i>
+            <i class="fa-brands fa-twitter icon"></i>
+            <i class="fa-brands fa-youtube icon"></i>
+            <i class="fa-brands fa-instagram icon"></i>
+
+          </div>
+          <div class="footerRightDown">
+            <div class="urban">Guides</div>
+            <div class="urban">Terms of Sale</div>
+            <div class="urban">Terms of Use</div>
+            <div class="urban">Privacy Policy</div>
+
+          </div>
+        </div>
+      </div>
+     
+    </footer>
+    <!-- footer -->
+  </body>
 </html>
